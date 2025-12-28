@@ -1,8 +1,10 @@
 # Template Webpack
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![JavaScript](https://img.shields.io/badge/JavaScript-83.6%25-yellow)](https://github.com/top-submissions/template-webpack)
-[![HTML](https://img.shields.io/badge/HTML-16.4%25-orange)](https://github.com/top-submissions/template-webpack)
+[![Issues](https://img.shields.io/github/issues/top-submissions/template-webpack.svg)](https://github.com/top-submissions/template-webpack/issues)
+[![Pull Requests](https://img.shields.io/github/issues-pr/top-submissions/template-webpack.svg)](https://github.com/top-submissions/template-webpack/pulls)
+[![Last Commit](https://img.shields.io/github/last-commit/top-submissions/template-webpack.svg)](https://github.com/top-submissions/template-webpack/commits)
+[![Contributors](https://img.shields.io/github/contributors/top-submissions/template-webpack.svg)](https://github.com/top-submissions/template-webpack/graphs/contributors)
+[![Downloads](https://img.shields.io/github/downloads/top-submissions/template-webpack/total)](https://github.com/top-submissions/template-webpack/releases)
 
 A production-ready Webpack 5 template repository for modern web development projects. This template provides a complete, pre-configured setup with development and production environments, perfect for quickly starting new JavaScript projects.
 
@@ -22,6 +24,7 @@ A production-ready Webpack 5 template repository for modern web development proj
 ## 📋 Prerequisites
 
 Before you begin, ensure you have the following installed:
+
 - **Node.js** (v14.0.0 or higher)
 - **npm** (v6.0.0 or higher)
 - A modern web browser
@@ -62,31 +65,37 @@ Production-optimized files will be generated in the `dist/` directory.
 
 ## 📜 Available Scripts
 
-| Script | Description |
-|--------|-------------|
-| `npm run dev` | Start development server with hot reload |
-| `npm run watch` | Watch mode - rebuilds on file changes |
-| `npm run build` | Create production build |
-| `npm run build:dev` | Create development build for debugging |
+| Script              | Description                              |
+| ------------------- | ---------------------------------------- |
+| `npm run dev`       | Start development server with hot reload |
+| `npm run watch`     | Watch mode - rebuilds on file changes    |
+| `npm run build`     | Create production build                  |
+| `npm run build:dev` | Create development build for debugging   |
 
 ## ⚙️ Configuration
 
 ### Webpack Common (webpack.common.js)
+
 Shared configuration used by both development and production builds:
+
 - Entry point configuration
 - Output settings
 - HTML plugin setup
 - Module rules for CSS, HTML, and images
 
 ### Webpack Development (webpack.dev.js)
+
 Development-specific configuration:
+
 - Development mode
 - Source maps (`eval-source-map`)
 - webpack-dev-server settings
 - Hot module replacement
 
 ### Webpack Production (webpack.prod.js)
+
 Production-specific configuration:
+
 - Production mode optimizations
 - Source maps for production debugging
 - Code minification and tree shaking
@@ -94,6 +103,7 @@ Production-specific configuration:
 ## 🎨 Styling
 
 The template includes pre-configured CSS support:
+
 - Import CSS files directly in JavaScript modules
 - Styles are automatically injected into the page
 - Support for modern CSS features
@@ -131,6 +141,7 @@ const formatted = format(date, 'MMMM dd, yyyy');
 ## 🖼️ Asset Management
 
 ### Images
+
 - **In CSS**: Reference images using relative paths - handled automatically
 - **In HTML**: Use html-loader to process image paths
 - **In JavaScript**: Import images directly
@@ -161,6 +172,7 @@ Detailed documentation is available in the `docs/` directory:
 ### GitHub Pages
 
 1. Build the project:
+
    ```bash
    npm run build
    ```
@@ -172,6 +184,7 @@ For detailed deployment instructions, see the [Setup Guide](./docs/SETUP.md).
 ### Other Platforms
 
 The `dist/` folder contains all files needed for deployment:
+
 - **Netlify**: Drag and drop `dist/` folder
 - **Vercel**: Import repository or deploy `dist/`
 - **Custom Server**: Upload contents of `dist/`
@@ -187,6 +200,7 @@ npm install package-name
 ### Add New Webpack Loaders
 
 Edit the appropriate webpack config file:
+
 - Common features → `webpack.common.js`
 - Development only → `webpack.dev.js`
 - Production only → `webpack.prod.js`
@@ -208,38 +222,50 @@ Contributions are welcome! Here's how you can help:
 ## 📝 Best Practices
 
 ### Development Workflow
+
 1. Work in the `src/` directory
 2. Test changes using `npm run dev`
 3. Build before deployment with `npm run build`
 4. Deploy only the `dist/` folder
 
 ### Code Organization
+
 - Keep modules in `src/modules/`
 - Import dependencies at the top of files
 - Use meaningful file and function names
 - Document complex logic
 
 ### Performance
+
 - Use code splitting for large applications
 - Optimize images before adding to project
 - Minimize external dependencies
 - Test production builds regularly
+
+### Security
+
+- Avoid hardcoding sensitive information (e.g., API keys)
+- Use HTTPS for secure communication
 
 ## 🐛 Troubleshooting
 
 ### Common Issues
 
 **Webpack errors about module type:**
+
 - Remove `"type"` property from `package.json`
 
 **Dev server not updating:**
+
 - Restart with `Ctrl+C` then `npm run dev`
 
 **Images not loading:**
+
 - Check file paths and webpack configuration
 - Ensure images are in `src/` directory
 
 **Build fails:**
+
 - Clear `node_modules` and reinstall: `rm -rf node_modules && npm install`
 - Check for syntax errors in webpack config files
 
@@ -263,6 +289,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📞 Support
 
 If you encounter any issues or have questions:
+
 - Check the [documentation](./docs/)
 - Open an [issue](https://github.com/top-submissions/template-webpack/issues)
 - Review the code comments in configuration files
@@ -270,6 +297,7 @@ If you encounter any issues or have questions:
 ## 🔄 Updates
 
 This template is regularly updated to include:
+
 - Latest Webpack features and best practices
 - Security patches
 - Performance improvements
@@ -284,6 +312,7 @@ Check the [commit history](https://github.com/top-submissions/template-webpack/c
 ## 🎯 Use Cases
 
 This template is perfect for:
+
 - Single-page applications (SPAs)
 - Static websites with bundled assets
 - Learning Webpack configuration
