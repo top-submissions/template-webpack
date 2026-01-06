@@ -16,13 +16,20 @@
     "lint:fix": "eslint src/**/*.js --fix",
     "format": "prettier --write \"src/**/*.{js,css,html}\"",
     "format:check": "prettier --check \"src/**/*.{js,css,html}\"",
-    "install:dev": "npm install @eslint/js css-loader eslint globals html-loader html-webpack-plugin prettier style-loader webpack webpack-cli webpack-dev-server"
+    "install:dev": "npm install @eslint/js css-loader eslint globals html-loader jest html-webpack-plugin prettier style-loader webpack webpack-cli webpack-dev-server"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/top-submissions/template-webpack.git"
   },
-  "keywords": ["webpack", "template", "boilerplate", "webpack5", "eslint", "prettier"],
+  "keywords": [
+    "webpack",
+    "template",
+    "boilerplate",
+    "webpack5",
+    "eslint",
+    "prettier"
+  ],
   "author": "top-submissions",
   "license": "MIT",
   "bugs": {
@@ -36,6 +43,7 @@
     "globals": "^16.5.0",
     "html-loader": "^5.1.0",
     "html-webpack-plugin": "^5.6.5",
+    "jest": "^30.2.0",
     "prettier": "3.7.4",
     "style-loader": "^4.0.0",
     "webpack": "^5.104.1",
